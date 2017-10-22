@@ -1,0 +1,20 @@
+#ifndef _OS_CONFIG_H_
+#define _OS_CONFIG_H_
+
+/*! \def IS_WINDOWS
+	\brief 判断编译环境是否为Windows
+
+	在Windows下编译时，IS_WINDOWS的值为\c 1,，否则为\c 0。
+ */
+#cmakedefine01 IS_WINDOWS
+
+/*! \def IS_UNIX
+	\brief 判断编译环境是否为Unix
+
+	在Unix下编译时，IS_UNIX的值为\c 1,，否则为\c 0。
+ */
+#cmakedefine01 IS_UNIX
+
+#cmakedefine01 IS_HAVE_STRING_VIEW
+
+#endif // _OS_CONFIG_H_
